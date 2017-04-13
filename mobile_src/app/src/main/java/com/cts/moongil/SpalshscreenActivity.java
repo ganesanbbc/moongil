@@ -1,7 +1,9 @@
-package moongil.cts.com.moongil;
+package com.cts.moongil;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+
+import moongil.cts.com.moongil.R;
 
 public class SpalshscreenActivity extends AppCompatActivity {
 

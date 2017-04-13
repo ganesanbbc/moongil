@@ -1,4 +1,4 @@
-package moongil.cts.com.moongil.login;
+package com.cts.moongil.vehiclebooking;
 
 import android.content.Context;
 import android.net.Uri;
@@ -10,15 +10,15 @@ import android.view.ViewGroup;
 
 import moongil.cts.com.moongil.R;
 
-public class SignupFragment extends Fragment {
+public class ChooseCityFragment extends Fragment {
+
     private OnFragmentInteractionListener mListener;
 
-    public SignupFragment() {
-        // Required empty public constructor
+    public ChooseCityFragment() {
     }
 
-    public static SignupFragment newInstance(String param1, String param2) {
-        SignupFragment fragment = new SignupFragment();
+    public static ChooseCityFragment newInstance(String param1, String param2) {
+        ChooseCityFragment fragment = new ChooseCityFragment();
         Bundle args = new Bundle();
         fragment.setArguments(args);
         return fragment;
@@ -49,8 +49,7 @@ public class SignupFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_signup, container, false);
+        return inflater.inflate(R.layout.fragment_choose_city, container, false);
     }
 
     @Override

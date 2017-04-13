@@ -1,4 +1,4 @@
-package moongil.cts.com.moongil.login;
+package com.cts.moongil.login;
 
 import android.content.Context;
 import android.net.Uri;
@@ -10,16 +10,17 @@ import android.view.ViewGroup;
 
 import moongil.cts.com.moongil.R;
 
-public class LoginFragment extends Fragment {
-
+public class SignupFragment extends Fragment {
     private OnFragmentInteractionListener mListener;
 
-    public LoginFragment() {
+    public SignupFragment() {
+        // Required empty public constructor
     }
 
-    public static LoginFragment newInstance() {
-        LoginFragment fragment = new LoginFragment();
-        fragment.setArguments(new Bundle());
+    public static SignupFragment newInstance(String param1, String param2) {
+        SignupFragment fragment = new SignupFragment();
+        Bundle args = new Bundle();
+        fragment.setArguments(args);
         return fragment;
     }
 
@@ -48,7 +49,8 @@ public class LoginFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_blank, container, false);
+        // Inflate the layout for this fragment
+        return inflater.inflate(R.layout.fragment_signup, container, false);
     }
 
     @Override

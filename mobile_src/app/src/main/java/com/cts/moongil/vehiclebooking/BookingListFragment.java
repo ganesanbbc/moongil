@@ -1,4 +1,4 @@
-package moongil.cts.com.moongil.vehiclebooking;
+package com.cts.moongil.vehiclebooking;
 
 import android.content.Context;
 import android.net.Uri;
@@ -10,16 +10,15 @@ import android.view.ViewGroup;
 
 import moongil.cts.com.moongil.R;
 
-public class NewBookingFragment extends Fragment {
+public class BookingListFragment extends Fragment {
 
     private OnFragmentInteractionListener mListener;
 
-    public NewBookingFragment() {
-        // Required empty public constructor
+    public BookingListFragment() {
     }
 
-    public static NewBookingFragment newInstance(String param1, String param2) {
-        NewBookingFragment fragment = new NewBookingFragment();
+    public static BookingListFragment newInstance(String param1, String param2) {
+        BookingListFragment fragment = new BookingListFragment();
         Bundle args = new Bundle();
         fragment.setArguments(args);
         return fragment;
@@ -50,7 +49,7 @@ public class NewBookingFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_new_booking, container, false);
+        return inflater.inflate(R.layout.fragment_booking_list, container, false);
     }
 
     @Override
@@ -60,6 +59,7 @@ public class NewBookingFragment extends Fragment {
     }
 
     public interface OnFragmentInteractionListener {
+        // TODO: Update argument type and name
         void onFragmentInteraction(Uri uri);
     }
 }

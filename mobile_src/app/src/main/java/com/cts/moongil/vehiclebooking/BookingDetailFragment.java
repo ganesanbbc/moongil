@@ -1,4 +1,4 @@
-package moongil.cts.com.moongil.vehiclebooking;
+package com.cts.moongil.vehiclebooking;
 
 import android.content.Context;
 import android.net.Uri;
@@ -10,20 +10,22 @@ import android.view.ViewGroup;
 
 import moongil.cts.com.moongil.R;
 
-public class ChooseCityFragment extends Fragment {
+public class BookingDetailFragment extends Fragment {
 
     private OnFragmentInteractionListener mListener;
 
-    public ChooseCityFragment() {
+    public BookingDetailFragment() {
+        // Required empty public constructor
     }
 
-    public static ChooseCityFragment newInstance(String param1, String param2) {
-        ChooseCityFragment fragment = new ChooseCityFragment();
+    public static BookingDetailFragment newInstance(String param1, String param2) {
+        BookingDetailFragment fragment = new BookingDetailFragment();
         Bundle args = new Bundle();
         fragment.setArguments(args);
         return fragment;
     }
 
+    // TODO: Rename method, update argument and hook method into UI event
     public void onButtonPressed(Uri uri) {
         if (mListener != null) {
             mListener.onFragmentInteraction(uri);
@@ -49,7 +51,7 @@ public class ChooseCityFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_choose_city, container, false);
+        return inflater.inflate(R.layout.fragment_booking_detail, container, false);
     }
 
     @Override

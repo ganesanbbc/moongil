@@ -1,4 +1,4 @@
-package moongil.cts.com.moongil.vehiclebooking;
+package com.cts.moongil.login;
 
 import android.content.Context;
 import android.net.Uri;
@@ -10,22 +10,19 @@ import android.view.ViewGroup;
 
 import moongil.cts.com.moongil.R;
 
-public class BookingDetailFragment extends Fragment {
+public class LoginFragment extends Fragment {
 
     private OnFragmentInteractionListener mListener;
 
-    public BookingDetailFragment() {
-        // Required empty public constructor
+    public LoginFragment() {
     }
 
-    public static BookingDetailFragment newInstance(String param1, String param2) {
-        BookingDetailFragment fragment = new BookingDetailFragment();
-        Bundle args = new Bundle();
-        fragment.setArguments(args);
+    public static LoginFragment newInstance() {
+        LoginFragment fragment = new LoginFragment();
+        fragment.setArguments(new Bundle());
         return fragment;
     }
 
-    // TODO: Rename method, update argument and hook method into UI event
     public void onButtonPressed(Uri uri) {
         if (mListener != null) {
             mListener.onFragmentInteraction(uri);
@@ -51,7 +48,7 @@ public class BookingDetailFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_booking_detail, container, false);
+        return inflater.inflate(R.layout.fragment_blank, container, false);
     }
 
     @Override
