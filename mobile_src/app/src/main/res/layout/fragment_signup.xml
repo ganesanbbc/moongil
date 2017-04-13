@@ -2,8 +2,9 @@
              xmlns:tools="http://schemas.android.com/tools"
              android:layout_width="match_parent"
              android:layout_height="match_parent"
-             tools:context="moongil.cts.com.moongil.login.LoginFragment">
+             tools:context="moongil.cts.com.moongil.login.SignupFragment">
 
+    <!-- TODO: Update blank fragment layout -->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
