@@ -17,7 +17,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.cts.moongil.SpalshscreenActivity"
+            android:name="com.cts.moongil.SpalshScreenActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/title_activity_spalshscreen"
             android:theme="@style/FullscreenTheme">
